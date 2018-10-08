@@ -1,0 +1,72 @@
+* {
+    box-sizing:border-box;
+}
+
+h1 {
+    background-color:rgb(118, 102, 209);
+    padding: 30px 40px;
+    font-family:verdana;
+    font-size:40px;
+    color:rgb(255,255,255);
+}
+header li ul {
+display:none;
+background-color: rgb(199, 193, 193);
+position:absolute;
+margin-left:40px;
+  
+}
+header li {
+    float:left;
+
+
+}
+ul {
+    background-color: rgb(151, 148, 148);
+}
+
+/*It is necessary to clear floats otherwise parent elements wont
+ get their height from their content(if the content is floating
+ elements)*/
+
+header ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header ul a {
+    display:block;
+    padding:5px 0 5px 40px;
+    color:#fff;
+    text-decoration:none;
+    font-family:verdana;
+}
+header li ul li {
+    
+    float:none;
+}
+header li ul li a {
+    padding:3px 10px;
+}
+header nav > ul > li:hover ul {
+  display:block;
+}
+main {
+    max-width:900px;
+    margin: 0 auto;
+    padding:20px 40px;
+}
+main h2 {
+    font-family:verdana;
+    font-size:25px;
+    color:#0ff;
+}
+main {
+    margin-top:10px;
+}
+header ul li.active {
+    color:rgb(118, 102, 209);
+}
+header ul a.active {
+    color:rgb(118, 102, 209);
+}
